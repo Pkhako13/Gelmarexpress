@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Georgian Sweets – GELMAR EXPRESS INC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Order Georgian Sweets</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="order.html">Order</a>
+      </nav>
+    </header>
+
+    <section class="order-form">
+      <h2>🧁 Order Form</h2>
+      <form id="orderForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" rows="3" required></textarea>
+
+        <label for="product">Choose a Product:</label>
+        <select id="product" required>
+          <option value="">-- Select --</option>
+          <option value="Churchkhela">Churchkhela</option>
+          <option value="Gozinaki">Gozinaki</option>
+          <option value="Pelamushi">Pelamushi</option>
+        </select>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1" required />
+
+        <button type="submit">Place Order</button>
+      </form>
+      <p id="confirmationMessage"></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 GELMAR EXPRESS INC | 723 Bound Brook Rd, NJ</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
